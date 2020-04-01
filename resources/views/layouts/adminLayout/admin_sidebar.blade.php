@@ -12,6 +12,14 @@
                     </ul>
                 </li>
 
+                <li class="has-sub-menu"><a href="#"><i class="ti-crown"></i> <span>Tin tức</span></a>
+                    <ul class="side-header-sub-menu">
+                        <li><a href="{{ url('admin/posts') }}"><span>Tất cả</span></a></li>
+                        <li><a href="{{ url('admin/posts/create') }}"><span>Thêm tin mới</span></a></li>
+                        <li><a href="{{ url('admin/posts/category') }}"><span>Danh mục</span></a></li>
+                    </ul>
+                </li>
+
                 <li class="has-sub-menu {{ (request()->is('admin/users*')) ? 'active' : '' }}"><a href="#"><i class="ti-user"></i> <span>Tài khoản</span></a>
                     <ul class="side-header-sub-menu">
                         <li><a href="{{url('admin/users')}}"><span>Tất cả</span></a></li>
@@ -41,17 +49,7 @@
                         <li><a href="elements-typography.html"><span>Typography</span></a></li>
                     </ul>
                 </li>
-                <li class="has-sub-menu"><a href="#"><i class="ti-crown"></i> <span>Advance Elements</span></a>
-                    <ul class="side-header-sub-menu">
-                        <li><a href="elements-clipboard.html"><span>Clipboard</span></a></li>
-                        <li><a href="elements-fullcalendar.html"><span>Full Calendar</span></a></li>
-                        <li><a href="elements-media-player.html"><span>Media Player</span></a></li>
-                        <li><a href="elements-sortable.html"><span>Sortable (Drag&Drop)</span></a></li>
-                        <li><a href="elements-toastr.html"><span>Toastr</span></a></li>
-                        <li><a href="elements-rating.html"><span>Rating</span></a></li>
-                        <li><a href="elements-sweetalert.html"><span>Sweet Alert</span></a></li>
-                    </ul>
-                </li>
+
                 <li class="has-sub-menu"><a href="#"><i class="ti-stamp"></i> <span>Icons</span></a>
                     <ul class="side-header-sub-menu">
                         <li><a href="icons-cryptocurrency.html"><span>Cryptocurrency</span></a></li>

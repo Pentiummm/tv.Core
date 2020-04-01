@@ -14003,6 +14003,15 @@ body.skin-dark #example-morris-donuts text tspan {
   fill: #8b8d9b;
 }
 
+body.skin-dark .add-edit-wrap {
+  padding: 0px;
+}
+body.skin-dark .add-edit-form {
+  background-color: #161824;
+  padding: 30px;
+  margin: 0 15px;
+}
+
 body.skin-dark .add-edit-product-wrap {
   background-color: #161824;
 }

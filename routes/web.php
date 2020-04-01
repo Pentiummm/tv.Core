@@ -20,14 +20,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth'], 'namespace' => 'Admin'], function(){
 
-Route::group(['middleware' => ['auth']], function(){
-//    Route::match(['post', 'get'], 'admin/login', 'AdminController@login');
-    Route::get('admin/dashboard', 'AdminController@dashboard');
+    Route::get('admin/dashboard', 'DashboardController@index')->name('admin dashboard');
 
     Route::resource('admin/roles','RoleController');
     Route::resource('admin/users','UserController');
     Route::resource('products','ProductController');
+
+    Route::resource('admin/posts/category', 'CategoryController');
+
+    Route::resource('admin/posts', 'PostController');
 });
 

@@ -4,7 +4,7 @@
     /*Summernote*/
     if( $('.summernote').length ) {
         $('.summernote').summernote({
-            height: 250,
+            height: 150,
         });
     }
     

@@ -67,8 +67,11 @@
 <!--Plugins JS-->
 <script src="{{ asset('/js/backend_js/plugins/perfect-scrollbar.min.js') }}"></script>
 <script src="{{ asset('/js/backend_js/plugins/tippy4.min.js.js') }}"></script>
+
 <!--Main JS-->
 <script src="{{ asset('/js/backend_js/main.js') }}"></script>
+
+@yield('javascript')
 
 </body>
 
